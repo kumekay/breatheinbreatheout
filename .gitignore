@@ -76,6 +76,3 @@ dist
 # Temporary folders
 tmp/
 temp/
-
-# Lock files
-package-lock.json
