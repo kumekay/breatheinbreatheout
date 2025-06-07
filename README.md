@@ -43,7 +43,7 @@ const BLOCKED_DOMAINS = [
 
 ### Testing
 
-This project includes automated tests using Jest and Puppeteer.
+This project includes automated tests using Jest and Puppeteer. Tests run automatically on every push and pull request via GitHub Actions.
 
 #### Setup
 ```bash
@@ -59,6 +59,15 @@ The test suite includes:
 - Script loading validation
 - Domain detection logic testing
 - UI component creation testing
+
+#### Continuous Integration
+
+Tests are automatically run on:
+- Node.js 18.x and 20.x
+- Every push to `main`/`master` branch
+- Every pull request
+
+If tests fail, screenshots and page content are uploaded as artifacts for debugging.
 
 ### Project Structure
 
