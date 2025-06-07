@@ -1,0 +1,26 @@
+{
+  "name": "breatheinbreatheout-userscript-tests",
+  "version": "1.0.0",
+  "description": "Automated tests for the BreatheInBreatheOut Tampermonkey script.",
+  "main": "breatheinbreatheout.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tampermonkey",
+    "userscript",
+    "puppeteer",
+    "jest",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "puppeteer": "^22.0.0"
+  },
+  "jest": {
+    "testTimeout": 30000,
+    "testMatch": ["**/tests/**/*.test.js"]
+  }
+}
