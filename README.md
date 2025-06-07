@@ -169,7 +169,7 @@ When reporting bugs or requesting features:
 
 ## License
 
-ISC License - see package.json for details.
+MIT License - see LICENSE for details.
 
 ## Philosophy
 
