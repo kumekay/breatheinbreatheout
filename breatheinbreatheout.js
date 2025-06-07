@@ -19,9 +19,7 @@
         'reddit.com',
         'facebook.com',
         'twitter.com',
-        'youtube.com',
-        'meduza.io',
-        'novayagazeta.eu'
+        'youtube.com'
         // Add more domains as needed
     ];
 
@@ -244,15 +242,15 @@
                 button.style.background = 'transparent';
             });
 
-        buttonContainer.appendChild(button);
-    });
+            buttonContainer.appendChild(button);
+        });
 
-    overlay.appendChild(title);
-    overlay.appendChild(message);
-    overlay.appendChild(buttonContainer);
+        overlay.appendChild(title);
+        overlay.appendChild(message);
+        overlay.appendChild(buttonContainer);
 
-    return overlay;
-}
+        return overlay;
+    }
 
     // Handle cooldown period selection and proceed to site
     function selectCooldownAndProceed(period) {
