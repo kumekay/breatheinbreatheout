@@ -15,6 +15,7 @@ describe('BreatheInBreatheOut Userscript', () => {
     beforeAll(async () => {
         browser = await puppeteer.launch({
             headless: true, // Set to false for debugging
+            args: process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
         });
     });
 
@@ -58,9 +59,7 @@ describe('BreatheInBreatheOut Userscript', () => {
                 'reddit.com',
                 'facebook.com',
                 'twitter.com',
-                'youtube.com',
-                'meduza.io',
-                'novayagazeta.eu'
+                'youtube.com'
             ];
 
             function testShouldBlockDomain(hostname) {
